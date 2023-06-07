@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-// mongodb+srv://Krunal:@cluster0.tl2wzcj.mongodb.net
+
 mongoose.connect("mongodb://127.0.0.1:27017/todolistDB", { useNewUrlParser: true }, mongoose.set('strictQuery', false));
 
 const itemSchema = new mongoose.Schema({
